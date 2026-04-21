@@ -8,7 +8,7 @@ app.use(express.json());
 const serverPort = process.env.PORT || 5643
 
 app.get('/', (req,res)=>{
-    res.status(201).json({'message': "I am running fine"})
+    res.json({'message': "I am running fine"})
 })
 
 app.listen(serverPort, ()=>{
