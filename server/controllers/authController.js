@@ -23,4 +23,13 @@ const signup = async (req, res) => {
     }
 };
 
-module.exports = { signup };
+const signin = async (req, res) => {
+    try {
+        return 'sign in'
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+module.exports = { signup, signin };
